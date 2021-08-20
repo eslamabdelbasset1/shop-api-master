@@ -1,0 +1,29 @@
+.footer {
+  background-color: #212121;
+  padding: 1rem 0rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  p {
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+.footer .list-inline li i.fab,
+.footer .list-inline li i.fas
+{
+  font-size: 20px;
+  width: 2.2rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(88,88,88);
+  transition: all .3s ease-in-out;
+
+}
+.footer .list-inline li:hover i.fab,
+.footer .list-inline li:hover i.fas
+{
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}

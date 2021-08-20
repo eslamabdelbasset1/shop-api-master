@@ -1,0 +1,17 @@
+.signIn
+{
+  padding: 0 2em;
+}
+input[type=checkbox]{
+  -ms-transform: scale(1.7); /* IE */
+  -moz-transform: scale(1.7); /* FF */
+  -webkit-transform: scale(1.7); /* Safari and Chrome */
+  -o-transform: scale(1.7); /* Opera */
+  transform: scale(1.7);
+  padding: 8px;
+  margin: 20px 0px 18px 7px;
+
+}
+.show{
+  margin-left: 10px;
+}
