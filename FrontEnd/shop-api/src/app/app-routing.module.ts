@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'orders', canActivate:[AuthGuard], component:OrdersComponent},
   {path:'order-details',canActivate:[AuthGuard], component:OrderDetailsComponent},
   {path: 'login', component: LoginComponent},
-  {path:'register', component:RegisterComponent},
+  {path:'register', component:RegisterComponent}
 ];
 
 @NgModule({
