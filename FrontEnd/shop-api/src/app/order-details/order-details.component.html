@@ -1,0 +1,14 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div *ngFor="let _orderDelails of orderDetails" class="orderDelails col-md-2 px-3 shadow fa-border">
+      <div class="my-2 position-relative">
+        <h3 class="py-2 h6">ID: {{_orderDelails.orderNumber}}</h3>
+        <h3 class="py-2 h6">Order Date: {{_orderDelails.productCode}}</h3>
+        <h3 class="py-2 h6">Required Date: {{_orderDelails.quantityOrdered}}</h3>
+        <h3 class="py-2 h6">ShippedDate: {{_orderDelails.shippedDate}}</h3>
+        <h3 class="py-2 h6">Status: {{_orderDelails.priceEach}}</h3>
+        <h3 class="py-2 h6">Comments: {{_orderDelails.orderLineNumber}}</h3>
+      </div>
+    </div>
+  </div>
+</div>

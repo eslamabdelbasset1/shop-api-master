@@ -14,10 +14,17 @@ export class ShopService {
 
   }
 
-  getOrdersDetails():Observable<any>
+  getOrders():Observable<any>
   {
     return this._HttpClient.get('https://localhost:44311/api/order');
 
   }
+
+  getOrdersDetails():Observable<any>
+  {
+    return this._HttpClient.get('https://localhost:44311/api/orderdetails');
+
+  }
+
 }
 

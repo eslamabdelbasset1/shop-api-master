@@ -10,7 +10,7 @@ export class OrdersComponent implements OnInit {
 
   orders:any [] = [];
   constructor(private _ShopService:ShopService) {
-    _ShopService.getOrdersDetails().subscribe((data)=>{
+    _ShopService.getOrders().subscribe((data)=>{
       this.orders = data;
     });
   }
