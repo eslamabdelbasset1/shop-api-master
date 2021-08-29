@@ -5,25 +5,26 @@ import {Observable} from "rxjs";
 @Injectable({
   providedIn: 'root'
 })
-export class ShopService {
-
+export class ShopService
+{
   constructor(private _HttpClient:HttpClient) { }
+
+  // GET Items <Customer>
   getCustomersDetails():Observable<any>
   {
-    return this._HttpClient.get('https://localhost:44311/api/customer');
-
+    return this._HttpClient.get('https://localhost:44311/customer');
   }
 
+  // GET Items <Order>
   getOrders():Observable<any>
   {
-    return this._HttpClient.get('https://localhost:44311/api/order');
-
+    return this._HttpClient.get('https://localhost:44311/order');
   }
 
+  // GET Items <Order Details>
   getOrdersDetails():Observable<any>
   {
-    return this._HttpClient.get('https://localhost:44311/api/orderdetails');
-
+    return this._HttpClient.get('https://localhost:44311/orderdetails');
   }
 
 }

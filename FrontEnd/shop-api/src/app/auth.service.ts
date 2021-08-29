@@ -4,7 +4,6 @@ import {Observable, BehaviorSubject} from "rxjs";
 import jwtDecode from "jwt-decode";
 import {Router} from "@angular/router";
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -32,6 +31,7 @@ export class AuthService {
   {
     return this._HttpClient.post('https://route-egypt-api.herokuapp.com/signin',formData)
   }
+  // Logout ----------
   logout()
   {
     this.currentUser.next(null);
